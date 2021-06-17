@@ -27,7 +27,7 @@ const Layout = ({ isHomePage, children }) => {
           </h1>
         ) : (
           <Link className="header-link-home" to="/">
-            {title}
+            home
           </Link>
         )}
       </header>

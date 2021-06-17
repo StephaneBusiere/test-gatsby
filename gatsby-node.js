@@ -13,6 +13,10 @@ const chunk = require(`lodash/chunk`)
  */
 exports.createPages = async gatsbyUtilities => {
   // Query our posts from the GraphQL server
+ 
+
+
+
   const posts = await getPosts(gatsbyUtilities)
 
   // If there are no posts in WordPress, don't do anything
@@ -96,27 +100,27 @@ async function createBlogPostArchive({ posts, gatsbyUtilities }) {
 
       // createPage is an action passed to createPages
       // See https://www.gatsbyjs.com/docs/actions#createPage for more info
-      await gatsbyUtilities.actions.createPage({
-        path: getPagePath(pageNumber),
+      // await gatsbyUtilities.actions.createPage({
+      //   path: getPagePath(pageNumber),
 
-        // use the blog post archive template as the page component
-        component: path.resolve(`./src/templates/blog-post-archive.js`),
+      //   // use the blog post archive template as the page component
+      //   component: path.resolve(`./src/templates/blog-post-archive.js`),
 
-        // `context` is available in the template as a prop and
-        // as a variable in GraphQL.
-        context: {
-          // the index of our loop is the offset of which posts we want to display
-          // so for page 1, 0 * 10 = 0 offset, for page 2, 1 * 10 = 10 posts offset,
-          // etc
-          offset: index * postsPerPage,
+      //   // `context` is available in the template as a prop and
+      //   // as a variable in GraphQL.
+      //   context: {
+      //     // the index of our loop is the offset of which posts we want to display
+      //     // so for page 1, 0 * 10 = 0 offset, for page 2, 1 * 10 = 10 posts offset,
+      //     // etc
+      //     offset: index * postsPerPage,
 
-          // We need to tell the template how many posts to display too
-          postsPerPage,
+      //     // We need to tell the template how many posts to display too
+      //     postsPerPage,
 
-          nextPagePath: getPagePath(pageNumber + 1),
-          previousPagePath: getPagePath(pageNumber - 1),
-        },
-      })
+      //     nextPagePath: getPagePath(pageNumber + 1),
+      //     previousPagePath: getPagePath(pageNumber - 1),
+      //   },
+      // })
     })
   )
 }

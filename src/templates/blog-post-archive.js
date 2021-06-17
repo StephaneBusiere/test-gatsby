@@ -5,6 +5,7 @@ import parse from "html-react-parser"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import loadable from '@loadable/component'
 
 const BlogIndex = ({
   data,
@@ -14,7 +15,7 @@ const BlogIndex = ({
 
   if (!posts.length) {
     return (
-      <Layout isHomePage>
+      <Layout >
         <Seo title="All posts" />
         <Bio />
         <p>
@@ -26,7 +27,7 @@ const BlogIndex = ({
   }
 
   return (
-    <Layout isHomePage>
+    <Layout >
       <Seo title="All posts" />
 
       <Bio />

@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import parse from "html-react-parser"
+import loadable from '@loadable/component'
 
 // We're using Gutenberg so we need the block styles
 // these are copied into this project due to a conflict in the postCSS
@@ -14,7 +15,7 @@ import "../css/@wordpress/block-library/build-style/theme.css"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Header from "../components/header"
+const AnimatedCursor = loadable(() => import('react-animated-cursor'))
 const BlogPostTemplate = ({ data: { previous, next, post } }) => {
   const featuredImage = {
     fluid: post.featuredImage?.node?.localFile?.childImageSharp?.fluid,
@@ -22,9 +23,9 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
   }
 
   return (
-    <Header>
+    <Layout>
       <Seo title={post.title} description={post.excerpt} />
-
+      <AnimatedCursor />
       <article
         className="blog-post"
         itemScope
@@ -83,7 +84,7 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
           </li>
         </ul>
       </nav>
-    </Header>
+    </Layout>
   )
 }
 
@@ -103,7 +104,6 @@ export const pageQuery = graphql`
       content
       title
       date(formatString: "MMMM DD, YYYY")
-
       featuredImage {
         node {
           altText
@@ -117,13 +117,11 @@ export const pageQuery = graphql`
         }
       }
     }
-
     # this gets us the previous post by id (if it exists)
     previous: wpPost(id: { eq: $previousPostId }) {
       uri
       title
     }
-
     # this gets us the next post by id (if it exists)
     next: wpPost(id: { eq: $nextPostId }) {
       uri
