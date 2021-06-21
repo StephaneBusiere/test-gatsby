@@ -64,10 +64,17 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/papillon.svg`,
       },
     },
-
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/
+        }
+      },
+    },
     // See https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/?=gatsby-plugin-react-helmet
     `gatsby-plugin-react-helmet`,
 
@@ -84,5 +91,7 @@ module.exports = {
      * To learn more, visit: https://gatsby.dev/offline
      */
     // `gatsby-plugin-offline`,
+  
+   
   ],
 }

@@ -49,7 +49,7 @@ return(
         <img ref={ el => (logoRef.current = el) }className="logo" src={logospain} alt="Logo" />
         <div className="header_menu_right">
         <Link className="header-link-home" to="/blog">Blog </Link>
-        <Link className="header-link-home" to="/">Journal</Link>
+        <Link className="header-link-home" to="/journal">Journal</Link>
         
         </div>
         </div>
