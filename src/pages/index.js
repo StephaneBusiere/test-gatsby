@@ -9,6 +9,7 @@ import Hero from "../components/hero"
 import Example from  "../components/marquee"
 import Example2 from  "../components/marquee2"
 import loadable from '@loadable/component'
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 const AnimatedCursor = loadable(() => import('react-animated-cursor'))
 
@@ -37,7 +38,7 @@ const Home = ({}) => {
         </div>
 
     </div>
-       
+    
     )
   }
   
