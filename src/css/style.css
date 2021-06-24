@@ -620,7 +620,7 @@ a.header-link-home:hover:before {
 .Papillon-image.un {
   grid-column: 1;
   grid-row:2;
-  background-image: url("../images/sauna.jpg");
+  background-image: url("https://images.pexels.com/photos/3188/love-romantic-bath-candlelight.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
 }
   
@@ -636,7 +636,7 @@ a.header-link-home:hover:before {
 .Papillon-image.trois {
   grid-column: 3;
   grid-row:2;
-  background-image: url("../images/ski.jpg");
+  background-image: url("https://images.pexels.com/photos/416805/pexels-photo-416805.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
   background-position: center;
 }
@@ -655,21 +655,21 @@ a.header-link-home:hover:before {
   grid-row-end:3;
   height:500px;
   opacity:0;
-  background-image: url("../images/feu.jpg");
+  background-image: url("https://images.pexels.com/photos/665166/pexels-photo-665166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
 }
 .Papillon-image.six {
   grid-column: 3;
   grid-row:3;
   opacity:0;
-  background-image: url("../images/spa.jpg");
+  background-image: url("https://images.pexels.com/photos/374148/pexels-photo-374148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
 }
 .Papillon-image.sept {
   grid-column: 1;
   grid-row:4;
   opacity:0;
-  background-image: url("../images/piscine-2.jpg");
+  background-image: url("https://images.pexels.com/photos/6908362/pexels-photo-6908362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
 }
 .Papillon-image.huit {
@@ -678,21 +678,21 @@ a.header-link-home:hover:before {
   grid-row-end:4;
   height:500px;
   opacity:0;
-  background-image: url("../images/nouriture.jpg");
+  background-image: url("https://images.unsplash.com/photo-1603445023295-ab5c07a403ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
   background-size: cover;
 }
 .Papillon-image.neuf {
   grid-column: 3;
   grid-row:4;
   opacity:0;
-  background-image: url("../images/piscine-2.jpg");
+  background-image: url("https://images.unsplash.com/photo-1487782310695-ed8583618566?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
   background-size: cover;
 }
 .Papillon-image.dix {
   grid-column: 1;
   grid-row:5;
   opacity:1;
-  background-image: url("../images/neige-nuit.jpg");
+  background-image: url("https://images.pexels.com/photos/3652524/pexels-photo-3652524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
 }
 .Video-image {
