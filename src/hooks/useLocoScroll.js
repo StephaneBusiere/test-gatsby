@@ -1,8 +1,12 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
-import LocomotiveScroll from "locomotive-scroll";
+// import LocomotiveScroll from "locomotive-scroll";
 import "../components/locomotive-scroll.css"
+
+
+import loadable from '@loadable/component'
+const LocomotiveScroll = loadable(() => import('react-animated-cursor'))
 
 gsap.registerPlugin(ScrollTrigger);
 
