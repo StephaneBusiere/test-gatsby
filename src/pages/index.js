@@ -183,11 +183,11 @@ const Journal = ({ data, location }) => {
             <AnimatedCursor />
             <div className="papillon-logo-container" >
                 <Link  top="exit" to="/"> <LogoPapillon className="logoPapillon" /></Link>
-               
-         
-                <div className="papillonTitle" ><p>PAPILLONS</p></div>
-                <div className="papillon-small-Title" ><p>BY AIRELLES</p></div>
             </div>
+                <div className="papillon-logo-title-container">
+                  <div className="papillonTitle" ><p>PAPILLONS</p></div>
+                  <div className="papillon-small-Title" ><p>BY AIRELLES</p></div>
+                </div>
             <div className="scroll-section" data-scroll-section> 
                 <div ref={ el => (papillonContentRef.current = el) } className="top-papillon-content" >
                     <div className="papillon-title-container">
